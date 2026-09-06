@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T14:35:55.505015+02:00",
+  "generated_at": "2026-09-06T14:55:05.935800+02:00",
   "run_time": "2026-09-05T08:00:00+02:00",
   "location": {
     "name": "Doline de Chaud Clapier",
@@ -29,6 +29,9 @@
       "wind_gusts": 17.3,
       "wind_dir": 327,
       "cloud_cover": 10,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 10,
+      "cloud_cover_high": 0,
       "picto": "clair"
     },
     {
@@ -40,6 +43,9 @@
       "wind_gusts": 15.5,
       "wind_dir": 315,
       "cloud_cover": 18,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 18,
+      "cloud_cover_high": 0,
       "picto": "clair"
     },
     {
@@ -51,6 +57,9 @@
       "wind_gusts": 10.4,
       "wind_dir": 330,
       "cloud_cover": 47,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 48,
+      "cloud_cover_high": 5,
       "picto": "peu-nuageux"
     },
     {
@@ -62,6 +71,9 @@
       "wind_gusts": 6.1,
       "wind_dir": 304,
       "cloud_cover": 56,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 56,
+      "cloud_cover_high": 0,
       "picto": "tres-nuageux"
     },
     {
@@ -73,6 +85,9 @@
       "wind_gusts": 15.1,
       "wind_dir": 204,
       "cloud_cover": 95,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 20,
+      "cloud_cover_high": 89,
       "picto": "couvert"
     },
     {
@@ -84,6 +99,9 @@
       "wind_gusts": 13.3,
       "wind_dir": 213,
       "cloud_cover": 41,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 41,
       "picto": "peu-nuageux"
     },
     {
@@ -95,6 +113,9 @@
       "wind_gusts": 22.3,
       "wind_dir": 210,
       "cloud_cover": 8,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 8,
       "picto": "clair"
     },
     {
@@ -106,6 +127,9 @@
       "wind_gusts": 36.4,
       "wind_dir": 212,
       "cloud_cover": 0,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 0,
       "picto": "clair"
     },
     {
@@ -117,6 +141,9 @@
       "wind_gusts": 40.0,
       "wind_dir": 217,
       "cloud_cover": 99,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 99,
+      "cloud_cover_high": 0,
       "picto": "couvert"
     },
     {
@@ -128,6 +155,9 @@
       "wind_gusts": 32.8,
       "wind_dir": 184,
       "cloud_cover": 67,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 42,
+      "cloud_cover_high": 42,
       "picto": "tres-nuageux"
     },
     {
@@ -139,6 +169,9 @@
       "wind_gusts": 21.2,
       "wind_dir": 212,
       "cloud_cover": 96,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 94,
+      "cloud_cover_high": 44,
       "picto": "couvert"
     },
     {
@@ -150,6 +183,9 @@
       "wind_gusts": 21.2,
       "wind_dir": 72,
       "cloud_cover": 91,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 91,
+      "cloud_cover_high": 3,
       "picto": "couvert"
     },
     {
@@ -161,6 +197,9 @@
       "wind_gusts": 21.2,
       "wind_dir": 103,
       "cloud_cover": 83,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 83,
+      "cloud_cover_high": 0,
       "picto": "couvert"
     },
     {
@@ -172,6 +211,9 @@
       "wind_gusts": 24.5,
       "wind_dir": 142,
       "cloud_cover": 79,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 79,
+      "cloud_cover_high": 0,
       "picto": "tres-nuageux"
     },
     {
@@ -183,6 +225,9 @@
       "wind_gusts": 20.9,
       "wind_dir": 205,
       "cloud_cover": 70,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 69,
+      "cloud_cover_high": 14,
       "picto": "tres-nuageux"
     },
     {
@@ -194,6 +239,9 @@
       "wind_gusts": 13.3,
       "wind_dir": 262,
       "cloud_cover": 70,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 52,
+      "cloud_cover_high": 44,
       "picto": "tres-nuageux"
     },
     {
@@ -205,6 +253,9 @@
       "wind_gusts": 10.8,
       "wind_dir": 307,
       "cloud_cover": 84,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 71,
+      "cloud_cover_high": 54,
       "picto": "couvert"
     },
     {
@@ -216,6 +267,9 @@
       "wind_gusts": 15.1,
       "wind_dir": 321,
       "cloud_cover": 56,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 16,
+      "cloud_cover_high": 43,
       "picto": "tres-nuageux"
     },
     {
@@ -227,6 +281,9 @@
       "wind_gusts": 13.7,
       "wind_dir": 310,
       "cloud_cover": 50,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 50,
       "picto": "peu-nuageux"
     },
     {
@@ -238,6 +295,9 @@
       "wind_gusts": 24.8,
       "wind_dir": 268,
       "cloud_cover": 45,
+      "cloud_cover_low": 8,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 39,
       "picto": "peu-nuageux"
     },
     {
@@ -249,6 +309,9 @@
       "wind_gusts": 26.6,
       "wind_dir": 295,
       "cloud_cover": 32,
+      "cloud_cover_low": 26,
+      "cloud_cover_mid": 7,
+      "cloud_cover_high": 0,
       "picto": "peu-nuageux"
     },
     {
@@ -260,6 +323,9 @@
       "wind_gusts": 31.3,
       "wind_dir": 305,
       "cloud_cover": 44,
+      "cloud_cover_low": 39,
+      "cloud_cover_mid": 12,
+      "cloud_cover_high": 0,
       "picto": "peu-nuageux"
     },
     {
@@ -271,6 +337,9 @@
       "wind_gusts": 35.6,
       "wind_dir": 309,
       "cloud_cover": 5,
+      "cloud_cover_low": 5,
+      "cloud_cover_mid": 0,
+      "cloud_cover_high": 0,
       "picto": "clair"
     },
     {
@@ -282,6 +351,9 @@
       "wind_gusts": 35.6,
       "wind_dir": 312,
       "cloud_cover": 100,
+      "cloud_cover_low": 0,
+      "cloud_cover_mid": 41,
+      "cloud_cover_high": 100,
       "picto": "couvert"
     }
   ]
