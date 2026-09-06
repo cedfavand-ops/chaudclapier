@@ -238,7 +238,7 @@ def main():
         apply_corr = in_corr_window and qualifies
 
         corrected_t = raw_t + offset_c if apply_corr else raw_t
-        picto = pick_picto(ct, ch, pr, rn, sn, hu, ws)
+        picto = pick_picto(ct, cl, cm, ch, pr, rn, sn, hu, ws)
 
         hours_out.append({
             "time": t.isoformat(),
