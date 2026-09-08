@@ -205,6 +205,13 @@ def fetch_datacake_series(start_dt, end_dt):
     except (urllib.error.URLError, urllib.error.HTTPError, ValueError) as e:
         print(f"[warn] Datacake indisponible: {e}", file=sys.stderr)
         return []
+    if not data:
+        print(
+            "[warn] Datacake a répondu mais sans aucune donnée sur cette période "
+            "(vérifier DATACAKE_DEVICE_ID, ou absence de mesures récentes).",
+            file=sys.stderr,
+        )
+        return []
     out = []
     for row in data:
         try:
@@ -214,6 +221,13 @@ def fetch_datacake_series(start_dt, end_dt):
                 out.append((t, float(v)))
         except Exception:
             continue
+    if not out:
+        available = sorted(k for k in data[0].keys() if k != "time")
+        print(
+            f"[warn] Aucune valeur trouvée pour le champ DATACAKE_TEMP_FIELD="
+            f"'{DATACAKE_TEMP_FIELD}'. Champs disponibles sur ce device : {available}",
+            file=sys.stderr,
+        )
     return out
 
 
