@@ -40,10 +40,11 @@ import urllib.request
 import urllib.parse
 import urllib.error
 
-LAT = 43.8318
-LON = 6.9617
+LAT = 44.915705
+LON = 5.335803
+ELEVATION_M = 1378
 TZ = ZoneInfo("Europe/Paris")
-LOCATION_NAME = "Gréolières-les-Neiges"
+LOCATION_NAME = "Doline de Chaud Clapier"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
@@ -72,10 +73,11 @@ def http_get_json(url, headers=None):
         return json.loads(resp.read().decode("utf-8"))
 
 
-def fetch_openmeteo(past_hours=0, forecast_days=3):
+def fetch_openmeteo(past_days=2, forecast_days=3):
     params = {
         "latitude": LAT,
         "longitude": LON,
+        "elevation": ELEVATION_M,
         "hourly": ",".join([
             "temperature_2m", "wind_speed_10m", "wind_direction_10m", "wind_gusts_10m",
             "cloud_cover", "cloud_cover_low", "cloud_cover_mid", "cloud_cover_high",
@@ -86,7 +88,11 @@ def fetch_openmeteo(past_hours=0, forecast_days=3):
         "timezone": "Europe/Berlin",
         "wind_speed_unit": "kmh",
         "forecast_days": forecast_days,
-        "past_hours": past_hours,
+        # past_days étend aussi le tableau "daily" (lever/coucher du soleil) en
+        # arrière, contrairement à past_hours qui ne joue que sur "hourly" -
+        # indispensable pour retrouver le coucher de soleil d'hier soir et
+        # calculer rétrospectivement la fenêtre de correction de la nuit passée.
+        "past_days": past_days,
     }
     url = "https://api.open-meteo.com/v1/forecast?" + urllib.parse.urlencode(params)
     return http_get_json(url)
@@ -280,7 +286,7 @@ def main():
     profile = bias["offset_profile"]
     alpha = bias.get("alpha", DEFAULT_ALPHA)
 
-    om = fetch_openmeteo(past_hours=36, forecast_days=3)
+    om = fetch_openmeteo(past_days=2, forecast_days=3)
     hourly = om["hourly"]
     times = [parse_iso_local(t) for t in hourly["time"]]
 
@@ -417,7 +423,7 @@ def main():
     output = {
         "generated_at": now.isoformat(),
         "run_time": times[0].isoformat() if times else None,
-        "location": {"name": LOCATION_NAME, "lat": LAT, "lon": LON},
+        "location": {"name": LOCATION_NAME, "lat": LAT, "lon": LON, "elevation_m": ELEVATION_M},
         "window": {"start": window_start.isoformat(), "end": window_end.isoformat()},
         "correction": {
             "current_offset_c": round(current_offset_c, 2) if current_offset_c is not None else None,
