@@ -40,11 +40,10 @@ import urllib.request
 import urllib.parse
 import urllib.error
 
-LAT = 44.915705
-LON = 5.335803
-ELEVATION_M = 1378
+LAT = 43.8318
+LON = 6.9617
 TZ = ZoneInfo("Europe/Paris")
-LOCATION_NAME = "Doline de Chaud Clapier"
+LOCATION_NAME = "Gréolières-les-Neiges"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
@@ -77,7 +76,6 @@ def fetch_openmeteo(past_hours=0, forecast_days=3):
     params = {
         "latitude": LAT,
         "longitude": LON,
-        "elevation": ELEVATION_M,
         "hourly": ",".join([
             "temperature_2m", "wind_speed_10m", "wind_direction_10m", "wind_gusts_10m",
             "cloud_cover", "cloud_cover_low", "cloud_cover_mid", "cloud_cover_high",
@@ -419,7 +417,7 @@ def main():
     output = {
         "generated_at": now.isoformat(),
         "run_time": times[0].isoformat() if times else None,
-        "location": {"name": LOCATION_NAME, "lat": LAT, "lon": LON, "elevation_m": ELEVATION_M},
+        "location": {"name": LOCATION_NAME, "lat": LAT, "lon": LON},
         "window": {"start": window_start.isoformat(), "end": window_end.isoformat()},
         "correction": {
             "current_offset_c": round(current_offset_c, 2) if current_offset_c is not None else None,
