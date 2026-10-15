@@ -1,25 +1,25 @@
 {
   "offset_profile": {
     "0": -1.64,
-    "1": -5.39,
-    "2": -8.27,
-    "3": -10.21,
-    "4": -11.68,
-    "5": -12.45,
-    "6": -12.76,
-    "7": -13.34,
-    "8": -13.7,
-    "9": -13.55,
-    "10": -13.23,
-    "11": -12.72,
-    "12": -12.23,
-    "13": -11.35,
-    "14": -10.71
+    "1": -5.26,
+    "2": -8.13,
+    "3": -10.11,
+    "4": -11.46,
+    "5": -12.36,
+    "6": -12.78,
+    "7": -13.16,
+    "8": -13.64,
+    "9": -13.84,
+    "10": -13.73,
+    "11": -13.49,
+    "12": -13.22,
+    "13": -12.45,
+    "14": -12.26
   },
   "alpha": 0.25,
-  "last_processed_night": "2026-10-13",
-  "last_night_error_c": null,
-  "last_night_samples": 0,
+  "last_processed_night": "2026-10-14",
+  "last_night_error_c": -14.47,
+  "last_night_samples": 10,
   "history": [
     {
       "night": "2026-09-07",
@@ -1313,6 +1313,61 @@
     {
       "night": "2026-10-13",
       "buckets_learned": []
+    },
+    {
+      "night": "2026-10-14",
+      "buckets_learned": [
+        {
+          "bucket": 4,
+          "error_c": -11.0,
+          "offset_after": -11.51
+        },
+        {
+          "bucket": 6,
+          "error_c": -12.8,
+          "offset_after": -12.77
+        },
+        {
+          "bucket": 7,
+          "error_c": -12.5,
+          "offset_after": -13.13
+        },
+        {
+          "bucket": 8,
+          "error_c": -13.7,
+          "offset_after": -13.7
+        },
+        {
+          "bucket": 9,
+          "error_c": -14.9,
+          "offset_after": -13.89
+        },
+        {
+          "bucket": 10,
+          "error_c": -15.3,
+          "offset_after": -13.75
+        },
+        {
+          "bucket": 11,
+          "error_c": -15.7,
+          "offset_after": -13.46
+        },
+        {
+          "bucket": 12,
+          "error_c": -16.8,
+          "offset_after": -13.37
+        },
+        {
+          "bucket": 13,
+          "error_c": -15.1,
+          "offset_after": -12.29
+        },
+        {
+          "bucket": 14,
+          "error_c": -16.9,
+          "offset_after": -12.26
+        }
+      ]
     }
   ]
 }
